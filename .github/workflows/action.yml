@@ -4,7 +4,7 @@ name: FreeProxy
 on:
   schedule:
     - cron: '10 */2 * * *'
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
