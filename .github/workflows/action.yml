@@ -19,6 +19,8 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests socks
+      - name: Reinstall socks package
+        run: pip uninstall -y socks && pip install socks
       - name: Print installed packages
         run: pip freeze
       - name: Check Python version
